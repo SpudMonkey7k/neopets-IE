@@ -40,9 +40,11 @@ This fix follows [themrrobert](https://github.com/themrrobert/neopets-flash-fix-
 > Fiddler seems to need "Capture Traffic" enabled in order to work consistently (feel free to experiment). This means it logs every packet that is proxied throuogh it. So while you can watch Youtube on Chrome while running Fiddler, you should clear out the history/restart Fiddler once in a while, otherwise it will start using up all your memory holding a copy of every video packet!
 
 ### Internet Explorer 
-> Windows 8.1 and lower can skip the first section. 
+> Windows 8.1 and lower can skip to `Initial IE Setup` section. 
 
-**Opening IE** 
+**Opening IE** (Windows 10 and up)
+> Here's how to launch IE without it redirecting you to Edge.
+
 1. At `C:\Program Files (x86)\Microsoft\Edge\Application\` there's a folder with a bunch of numbers, when you enter that folder there's another folder called `BHO`, rename it to `BHO.bak` and it will stop redirecting you. 
 > Note that with every update to Edge you will have to repeat step 1.
 2. On your desktop, create a `.vbs` file with the following code in it: 
@@ -65,4 +67,10 @@ ie.Visible = 1
 7. Once logged in, head to https://neopets.com/games/classic.phtml to go to the game library. 
 > Note that the pages of the website that use the new layout will not work properly, but any page that still uses the old layout will work. 
 
+**Flash error**
+![Flash error](https://github.com/SpudMonkey7k/neopets-IE/blob/main/assets/flash-error.png)
+IE will initially hand loading the Flash games, simply wait a couple of seconds then click on the white square where the game should be. 
+A message similar to the one above will popup. Simply clicking `Stop script` should start loading the game for you. 
+
 > Make sure that IE is certificated and that Fiddler is running when trying to play on Neopets.
+
