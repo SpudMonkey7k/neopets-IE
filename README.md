@@ -25,15 +25,14 @@ This fix follows [themrrobert](https://github.com/themrrobert/neopets-flash-fix-
 > - Capture HTTPS CONNECTs
 > - Decrypt HTTPS Traffic
 > - Ignore Server Certificate Errors.
-> 3. Click Actions->Export Root Certificate to Desktop (This is to make Pale Moon trust the localhost and not give you constant certificate errors)
+> 3. Click Actions->Export Root Certificate to Desktop (This is to make Internet Explorer trust the localhost and not give you constant certificate errors)
 > 4. Click Actions->Trust Root Certificate. This will make other browsers (like Chrome), and Windows apps such as Discord, also trust the proxy (Fiddler). *This isn't strictly necessary, but if it's not done, you won't be able to use Chrome/Discord/Etc while Fiddler is running and intercepting traffic.*
-5. To install this certificate into Pale Moon, Open Pale Moon, and click the button/toolbar that says, "Pale Moon" at the top left of the browser (menu bar), and click Preferences. Then go to the "Advanced" tab, and then choose the "Certificates" sub-tab. Click "View Certificates" then click "Import" and locate the exported certificate on your desktop. It is named "FiddlerRoot.cer"
-6. **Important:** Add exclusions to your proxy: In Fiddler, go to Tools->Options->Connections, and add the following into the "Bypass URLs that begin with..." field:
+5. **Important:** Add exclusions to your proxy: In Fiddler, go to Tools->Options->Connections, and add the following into the "Bypass URLs that begin with..." field:
 > <-loopback>;discord.com; discordapp.com; netflix.com; *.discord.com; *.discordapp.com; *.netflix.com; *.discordapp.net; discordapp.net; *.google.com; google.com; *.gmail.com; gmail.com; *.youtube.com; *.gstatic.com; *.cloudflare.com; *.googleapis.com; *.jquery.com; *.googlevideo.com; support.neopets.com
-7. Download the [neopets folder in this project](https://download-directory.github.io/?url=https://github.com/themrrobert/neopets-flash-fix-windows-10/tree/main/neopets)
-8. Find fiddler installation path (usually C:\Users\YOUR_USERNAME\AppData\Local\Programs\Fiddler or C:\Program Files\Fiddler), create a folder named "neopets" and extract the downloaded neopets.zip files into it. The extracted files should end up looking like C:\Users\YOUR_USERNAME\AppData\Local\Programs\Fiddler\neopets\games\...
-9. Close Fiddler.
-10. Start Fiddler whenever you want to play Neopets games :)
+6. Download the [neopets folder in this project](https://download-directory.github.io/?url=https://github.com/themrrobert/neopets-flash-fix-windows-10/tree/main/neopets)
+7. Find fiddler installation path (usually C:\Users\YOUR_USERNAME\AppData\Local\Programs\Fiddler or C:\Program Files\Fiddler), create a folder named "neopets" and extract the downloaded neopets.zip files into it. The extracted files should end up looking like C:\Users\YOUR_USERNAME\AppData\Local\Programs\Fiddler\neopets\games\...
+8. Close Fiddler.
+9. Start Fiddler whenever you want to play Neopets games :)
 
 > **Notes:**  
 > #5. You can remove this certificate later via Windows Certificate Manager (certmgr.msc->Trusted Root Certification Authorities->Certificates). The name of the certificate is DO_NOT_TRUST so that you're well aware it's a local certificate, and not from a trusted Certificate Authority (CA). It is safe to trust this certificate, BUT the implications are that you will not see any genuine certificate errors from websites, so you should keep Fiddler closed when you're not using it, and you should remove the certificate if you stop playing Neopets games.
@@ -57,6 +56,7 @@ ie.Visible = 1
 **Initial IE Setup**
 1. In the Menu, click on `Internet Options` and select `Content` tab. 
 2. Click on `Certificates` and then Import the certificate created by Fiddler. 
+> Locate the exported certificate on your desktop. It is named "FiddlerRoot.cer"
 3. Close out of the `Internet Options` window. 
 4. In the Menu, click on `Compatibility View Settings` and add `neopets.com`. 
 5. Close out of the `Compatibility View Settings` window. 
