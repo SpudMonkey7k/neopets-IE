@@ -69,6 +69,7 @@ ie.Visible = 1
 
 **Flash error**
 ![Flash error](https://github.com/SpudMonkey7k/neopets-IE/blob/main/assets/flash-error.png)
+
 IE will initially hand loading the Flash games, simply wait a couple of seconds then click on the white square where the game should be. 
 A message similar to the one above will popup. Simply clicking `Stop script` should start loading the game for you. 
 
