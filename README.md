@@ -59,12 +59,16 @@ ie.Visible = 1
 1. In the Menu, click on `Internet Options` and select `Content` tab. 
 2. Click on `Certificates` and then Import the certificate created by Fiddler. 
 > Locate the exported certificate on your desktop. It is named "FiddlerRoot.cer"
-3. Close out of the `Internet Options` window. 
-4. In the Menu, click on `Compatibility View Settings` and add `neopets.com`. 
-5. Close out of the `Compatibility View Settings` window. 
-6. head to https://neopets.com/vsilogin.phtml (old login page) to login. 
+3. Click on `Security` tab. 
+4. Uncheck `Enable Protected Mode`. 
+> If `Enable Protected Mode` is missing, click on `Trusted Sites` and add neopets to the list like the image below then set security level to low
+![IE Trusted settings](https://github.com/SpudMonkey7k/neopets-IE/blob/main/assets/trusted.png)
+5. Close out of the `Internet Options` window. 
+6. In the Menu, click on `Compatibility View Settings` and add `neopets.com`. 
+7. Close out of the `Compatibility View Settings` window. 
+8. head to https://neopets.com/vsilogin.phtml (old login page) to login. 
 > Note that you will need to disable your 2fa to login via IE. 
-7. Once logged in, head to https://neopets.com/games/classic.phtml to go to the game library. 
+9. Once logged in, head to https://neopets.com/games/classic.phtml to go to the game library. 
 > Note that the pages of the website that use the new layout will not work properly, but any page that still uses the old layout will work. 
 
 **Flash error**
