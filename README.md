@@ -61,8 +61,8 @@ ie.Visible = 1
 > Locate the exported certificate on your desktop. It is named "FiddlerRoot.cer"
 3. Click on `Security` tab. 
 4. Uncheck `Enable Protected Mode`. 
-> If `Enable Protected Mode` is missing, click on `Trusted Sites` and add neopets to the list like the image below then set security level to low
-![IE Trusted settings](https://github.com/SpudMonkey7k/neopets-IE/blob/main/assets/trusted.png)
+> If `Enable Protected Mode` is missing, click on `Trusted Sites` and add neopets to the list like the image below then set security level to low.
+> ![IE Trusted settings](https://github.com/SpudMonkey7k/neopets-IE/blob/main/assets/trusted.png)
 5. Close out of the `Internet Options` window. 
 6. In the Menu, click on `Compatibility View Settings` and add `neopets.com`. 
 7. Close out of the `Compatibility View Settings` window. 
