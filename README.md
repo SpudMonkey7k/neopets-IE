@@ -65,12 +65,13 @@ ie.Visible = 1
 > 
 > ![IE Trusted settings](https://github.com/SpudMonkey7k/neopets-IE/blob/main/assets/trusted.png)
 5. Close out of the `Internet Options` window. 
-6. In the Menu, click on `Compatibility View Settings` and add `neopets.com`. 
+6. In the Menu, click on `Compatibility View Settings` and add `neopets.com`.
 7. Close out of the `Compatibility View Settings` window. 
 8. head to https://neopets.com/vsilogin.phtml (old login page) to login. 
 > Note that you will need to disable your 2fa to login via IE. 
 9. Once logged in, head to https://neopets.com/games/classic.phtml to go to the game library. 
-> Note that the pages of the website that use the new layout will not work properly, but any page that still uses the old layout will work. 
+> Note that the pages of the website that use the new layout will not work properly, but any page that still uses the old layout will work.
+> >  If IE freezes trying to load Neopets, please remove neopets from Compatibility Settings! 
 
 **NeoPass**
 
