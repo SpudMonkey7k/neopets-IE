@@ -10,6 +10,7 @@ This fix follows [themrrobert](https://github.com/themrrobert/neopets-flash-fix-
 ## Directions
 1. Download and install  [Flash player](https://github.com/SpudMonkey7k/neopets-IE/raw/main/Installers/flashplayer32_0r0_371_winax.exe),  [Shockwave](https://github.com/SpudMonkey7k/neopets-IE/raw/main/Installers/Shockwave_Installer_Full.msi), [3dvia](http://3dlifeplayer.dl.3dvia.com/player/install/installer.exe), and [Fiddler Classic](https://www.telerik.com/download/fiddler) (No email confirmation to download, so you can use a fake one)
   > Note: If you get an error installing Flash saying something along the lines of Internet Explorer already having Flash built in, rerun the installer in Windows 7 compatibility mode and as Administrator. 
+  > If it still gives the error, then download and install [this version of flash player](https://static.centbrowser.com/FlashPlayerStandalone/ppapi_32.0.0.363.exe).
 2. With browser closed, add `ProtectedMode=0` to `mms.cfg` file then restart browser. 
 > - C:\windows\SysWOW64\Macromed\Flash\mms.cfg for 64-bit system.
 > - C:\windows\System32\Macromed\Flash\mms.cfg for 32-bit system.
